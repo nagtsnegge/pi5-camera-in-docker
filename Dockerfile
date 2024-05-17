@@ -11,7 +11,7 @@ RUN apt update && apt -y upgrade
 RUN apt update && apt install -y --no-install-recommends \
          python3-pip \
          python3-picamera2 \
-         python3-opencv
+         python3-opencv \
      && apt-get clean \
      && apt-get autoremove \
      && rm -rf /var/cache/apt/archives/* \
